@@ -1,22 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasterleria Leo</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteleria LEO'S</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <header>
-      <h1>Pasteleria</h1> 
-   </header>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 
-  </body>
+  <header class="header">
+  </header>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">PASTELERIA LEO'S</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="./pages/pastelero.html">PASTELERO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./pages/ubicacion.html">UBICACIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--
+LISTO El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.
+LISTO El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.
+El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.
+El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.
+El cliente de la pastelería necesita poner en un formulario su pedido.
+
+El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles.
+El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles.
+El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario.
+
+LISTO La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.-->
+
+  <section class="container py-3" id="idSabores">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Sabores</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Fresa*</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$300</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>*Sabor artificial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Chocolate</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$250</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Chocolate abuelita</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Vainilla*</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$250 </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>*Sabor artificial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container py-3" id="idAdornos">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Adornos</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Velas</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Diferentes colores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Frutas</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$25</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Fresas</li>
+              <li>Duraznos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Crema pastelera</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$30</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Dentro del pastel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container py-3" id="idPedido">
+  </section>
+  <!--El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, 
+    Descripción general del pastel y la selección de sabores y adornos.-->
+    
+  <section class="container py-3" id="idFormulario">
+    <h2 class="display-6 text-center mb-4">Formulario</h2>
+    <form class="row g-3">
+      <!--
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      -->
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Nommbre</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>     
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Telefono</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Descripción General</label>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
 
 </html>
